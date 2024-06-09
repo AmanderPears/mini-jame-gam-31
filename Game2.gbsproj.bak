@@ -312,7 +312,7 @@
                 {
                     "command": "EVENT_GBVM_SCRIPT",
                     "args": {
-                        "script": "VM_OVERLAY_SHOW 0, 0, .UI_COLOR_WHITE, 0\n\nVM_LOAD_TEXT 0\n.asciz \"HOW TO SHOP\\n\\n1. Press A to buy a\\nproduct.\\n2. Don't forget\\ndaddy's imposed\\nbudget.\\n3. Try to shop as\\nmuch as you can\\nwithout going over budget!!\"\nVM_DISPLAY_TEXT\n"
+                        "script": "VM_OVERLAY_SHOW 0, 0, .UI_COLOR_WHITE, 0\n\n\nVM_LOAD_TEXT 0\n.asciz \"HOW TO SHOP\\n\\n1. Press A to buy a\\nproduct.\\n2. Don't forget\\ndaddy's imposed\\nbudget.\"\nVM_DISPLAY_TEXT\n\n"
                     },
                     "id": "d32e9c1c-a6d5-4ce9-a930-a42adabb51b0"
                 }
