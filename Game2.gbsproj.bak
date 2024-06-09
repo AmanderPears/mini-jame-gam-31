@@ -228,11 +228,45 @@
                     "id": "79c86fb1-59df-42f3-a786-efff8b81507d"
                 },
                 {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__collapse": false,
+                        "__label": "dialog"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "*cell phone rings*"
+                                    ],
+                                    "avatarId": ""
+                                },
+                                "id": "6e5be6a4-dce0-4109-aacb-b80420a541df"
+                            },
+                            {
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        " Remember my \n darling.",
+                                        " Don't spend \n more than\n $1000!!!"
+                                    ],
+                                    "avatarId": "6db249b3-b56e-4ae4-839f-884bc32722c9"
+                                },
+                                "id": "b6b4df54-d5d4-4f82-8611-0397b25c1efe"
+                            }
+                        ]
+                    },
+                    "id": "553a4ffc-0f5f-4fd6-9a14-bd726296ef49"
+                },
+                {
                     "command": "EVENT_AWAIT_INPUT",
                     "args": {
                         "input": [
                             "start"
-                        ]
+                        ],
+                        "__comment": true
                     },
                     "id": "9b878549-1e83-43d7-9887-393dd3633c17"
                 },
@@ -247,6 +281,35 @@
                         "customEventId": "409014f1-0d47-4a1e-a4ea-435958d132d1"
                     },
                     "id": "e19d013c-79b3-494b-a3c7-54f34df1178c"
+                },
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__collapse": false,
+                        "__label": "override d-pad"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SET_INPUT_SCRIPT",
+                                "args": {
+                                    "input": [
+                                        "left",
+                                        "up",
+                                        "down",
+                                        "right"
+                                    ],
+                                    "override": true,
+                                    "__scriptTabs": "press"
+                                },
+                                "children": {
+                                    "true": []
+                                },
+                                "id": "94e13402-ce27-4170-b227-99c68bd8ae2a"
+                            }
+                        ]
+                    },
+                    "id": "207c6988-ad24-41a2-8c35-59e0571a14d9"
                 }
             ],
             "playerHit1Script": [],
@@ -552,11 +615,8 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Swipe, swipe,",
-                            "and voila! ",
-                            "Daddy's card",
-                            "makes dreams",
-                            " come true!"
+                            " Swipe, swipe,\n swipe, and ... \n    voila! ",
+                            " Daddy's card \n makes dreams \n come true!"
                         ],
                         "avatarId": "50a76526-981f-4781-8059-17af5c2f2401"
                     },
@@ -622,19 +682,9 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Do not",
-                            "underestimate ",
-                            "the seriousness ",
-                            "of this. I've",
-                            "provided you",
-                            " with a",
-                            " significant ",
-                            "allowance, going",
-                            "over it angers",
-                            "me and betrays",
-                            " an unfortunate ",
-                            "lack of",
-                            " character. "
+                            " Do not \n underestimate \n the seriousness\n of this.",
+                            " I've provided \n you with a \n significant \n allowance.",
+                            " Going over it \n angers me and \n betrays an\n unfortunate \n lack of \n character."
                         ],
                         "avatarId": "6db249b3-b56e-4ae4-839f-884bc32722c9"
                     },
@@ -700,10 +750,8 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Daddy, I want to",
-                            "go shopping.",
-                            "Can I have your ",
-                            "credit card?"
+                            " Daddy, I want \n to go shopping!",
+                            " Can I have your\n credit card?"
                         ],
                         "avatarId": "50a76526-981f-4781-8059-17af5c2f2401"
                     },
@@ -713,13 +761,9 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Of course, my",
-                            " my little",
-                            "Polpetta.",
-                            "Just dont spend",
-                            " more than your",
-                            " allowance this",
-                            " time."
+                            " Of course, my \n little \n Polpetta.",
+                            " Just dont...",
+                            " spend more than\n your allowance \n this time."
                         ],
                         "avatarId": "6db249b3-b56e-4ae4-839f-884bc32722c9"
                     },
@@ -729,8 +773,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "I wont, daddy.",
-                            " Ciao!"
+                            " I wont, daddy.\n Ciao!"
                         ],
                         "avatarId": "50a76526-981f-4781-8059-17af5c2f2401"
                     },
@@ -2470,53 +2513,10 @@
                                             "id": "ff967a6d-3ac8-4a38-9352-f228c2ad0e02"
                                         },
                                         {
-                                            "command": "EVENT_ACTOR_ACTIVATE",
-                                            "args": {
-                                                "actorId": "$self$"
-                                            },
-                                            "id": "0e3c4003-3fc6-4520-b575-53e15c0dbb9c"
-                                        },
-                                        {
-                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                            "args": {
-                                                "actorId": "$self$",
-                                                "x": 4,
-                                                "y": 0,
-                                                "moveType": "horizontal",
-                                                "useCollisions": false
-                                            },
-                                            "id": "d075b2c8-00d0-41bb-9749-4747386a0ae1"
-                                        },
-                                        {
-                                            "command": "EVENT_ACTOR_MOVE_CANCEL",
-                                            "args": {
-                                                "actorId": "$self$"
-                                            },
-                                            "id": "e4aeef2c-56fc-42e0-a749-9287625de761"
-                                        },
-                                        {
-                                            "command": "EVENT_WAIT",
-                                            "args": {
-                                                "time": 0.5,
-                                                "frames": 30
-                                            },
-                                            "id": "a8774784-06ea-4b86-9dae-2ca1517c2796"
-                                        },
-                                        {
-                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                            "args": {
-                                                "actorId": "$self$",
-                                                "x": 3,
-                                                "y": 0,
-                                                "moveType": "horizontal",
-                                                "useCollisions": false
-                                            },
-                                            "id": "57206391-12b3-4f05-a4df-d7bf42666bc6"
-                                        },
-                                        {
                                             "command": "EVENT_ACTOR_DEACTIVATE",
                                             "args": {
-                                                "actorId": "$self$"
+                                                "actorId": "$self$",
+                                                "__collapse": true
                                             },
                                             "id": "16df5a6c-42d1-4b21-9160-a51c352f3c6c"
                                         },
@@ -2533,9 +2533,66 @@
                                                     "value": 10
                                                 },
                                                 "moveType": "horizontal",
-                                                "useCollisions": false
+                                                "useCollisions": false,
+                                                "__collapse": false
                                             },
                                             "id": "a6d4ab76-4cfd-4f49-a3a8-c898675d898b"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_ACTIVATE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "__collapse": true
+                                            },
+                                            "id": "0e3c4003-3fc6-4520-b575-53e15c0dbb9c"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "x": 4,
+                                                "y": 0,
+                                                "moveType": "horizontal",
+                                                "useCollisions": false,
+                                                "__collapse": false
+                                            },
+                                            "id": "d075b2c8-00d0-41bb-9749-4747386a0ae1"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_CANCEL",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "__collapse": true
+                                            },
+                                            "id": "e4aeef2c-56fc-42e0-a749-9287625de761"
+                                        },
+                                        {
+                                            "command": "EVENT_WAIT",
+                                            "args": {
+                                                "time": 0.5,
+                                                "frames": 30,
+                                                "__collapse": true
+                                            },
+                                            "id": "a8774784-06ea-4b86-9dae-2ca1517c2796"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "x": 3,
+                                                "y": 0,
+                                                "moveType": "horizontal",
+                                                "useCollisions": false,
+                                                "__collapse": true
+                                            },
+                                            "id": "57206391-12b3-4f05-a4df-d7bf42666bc6"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_DEACTIVATE",
+                                            "args": {
+                                                "actorId": "$self$"
+                                            },
+                                            "id": "533b655b-5f9c-4ad8-bac5-33c01d549672"
                                         }
                                     ]
                                 },
@@ -2846,8 +2903,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 296,
-        "worldScrollY": 223,
+        "worldScrollX": 683,
+        "worldScrollY": 600,
         "zoom": 226.14713683724312,
         "customColorsEnabled": false,
         "sgbEnabled": false,
