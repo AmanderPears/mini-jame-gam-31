@@ -181,7 +181,7 @@
                                                             "x": 0,
                                                             "y": 0,
                                                             "direction": "",
-                                                            "fadeSpeed": "2"
+                                                            "fadeSpeed": 5
                                                         },
                                                         "id": "0c0149e6-1c14-41c7-ab29-6a476ad324ef"
                                                     }
@@ -683,8 +683,10 @@
                     "args": {
                         "text": [
                             " Do not \n underestimate \n the seriousness\n of this.",
-                            " I've provided \n you with a \n significant \n allowance.",
-                            " Going over it \n angers me and \n betrays an\n unfortunate \n lack of \n character."
+                            " I've provided \n you with a ",
+                            " significant \n allowance.",
+                            " Going over it \n angers me and \n betrays an",
+                            " unfortunate \n lack of \n character."
                         ],
                         "avatarId": "6db249b3-b56e-4ae4-839f-884bc32722c9"
                     },
@@ -2298,27 +2300,17 @@
                 {
                     "command": "EVENT_SET_FALSE",
                     "args": {
-                        "variable": "5"
+                        "variable": "5",
+                        "__collapse": false
                     },
                     "id": "9e501457-c4aa-4d3a-b420-d3b40f2ad24f"
                 },
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "18115e29-ef5f-4075-88b6-20c05ba0ccaa"
+                        "musicId": "4cf6f669-c1be-4492-a0c0-bc118e3244dc"
                     },
                     "id": "ae501fb5-58dc-42f4-9584-7e2357ec141e"
-                },
-                {
-                    "command": "EVENT_SET_MUSIC_ROUTINE",
-                    "args": {
-                        "routine": 0,
-                        "__scriptTabs": "trigger"
-                    },
-                    "children": {
-                        "true": []
-                    },
-                    "id": "1e9bcb55-9b1c-4c78-a739-0f9dde6c9d09"
                 }
             ]
         },
@@ -2513,6 +2505,14 @@
                                             "id": "ff967a6d-3ac8-4a38-9352-f228c2ad0e02"
                                         },
                                         {
+                                            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "speed": 4
+                                            },
+                                            "id": "a73ca848-382a-4987-9935-e7e8af7400f1"
+                                        },
+                                        {
                                             "command": "EVENT_ACTOR_DEACTIVATE",
                                             "args": {
                                                 "actorId": "$self$",
@@ -2534,7 +2534,7 @@
                                                 },
                                                 "moveType": "horizontal",
                                                 "useCollisions": false,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "id": "a6d4ab76-4cfd-4f49-a3a8-c898675d898b"
                                         },
@@ -2554,7 +2554,7 @@
                                                 "y": 0,
                                                 "moveType": "horizontal",
                                                 "useCollisions": false,
-                                                "__collapse": false
+                                                "__collapse": true
                                             },
                                             "id": "d075b2c8-00d0-41bb-9749-4747386a0ae1"
                                         },
@@ -2663,6 +2663,14 @@
             "name": "In_Game_music",
             "symbol": "song_in_game_music",
             "filename": "In_Game_music.uge",
+            "settings": {},
+            "type": "uge"
+        },
+        {
+            "id": "4cf6f669-c1be-4492-a0c0-bc118e3244dc",
+            "name": "In_Game_music_FINAL",
+            "symbol": "song_in_game_music_final",
+            "filename": "In_Game_music_FINAL.uge",
             "settings": {},
             "type": "uge"
         },
@@ -2903,8 +2911,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 683,
-        "worldScrollY": 600,
+        "worldScrollX": 761,
+        "worldScrollY": 487,
         "zoom": 226.14713683724312,
         "customColorsEnabled": false,
         "sgbEnabled": false,
