@@ -99,7 +99,7 @@
                 {
                     "command": "EVENT_LOOP",
                     "args": {
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -305,6 +305,64 @@
                     "id": "79c86fb1-59df-42f3-a786-efff8b81507d"
                 },
                 {
+                    "command": "EVENT_RNG_SEED",
+                    "args": {},
+                    "id": "e6b70566-70a0-478d-acd2-81b24fb7f8b6"
+                },
+                {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "Setting up budget variable"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_VARIABLE_MATH",
+                                "args": {
+                                    "vectorX": "2",
+                                    "operation": "set",
+                                    "other": "rnd",
+                                    "vectorY": "L0",
+                                    "value": "0",
+                                    "minValue": 0,
+                                    "maxValue": 6,
+                                    "clamp": false
+                                },
+                                "id": "764b1dc1-c9ac-407a-b448-06255ad4a512"
+                            },
+                            {
+                                "command": "EVENT_VARIABLE_MATH",
+                                "args": {
+                                    "vectorX": "2",
+                                    "operation": "mul",
+                                    "other": "val",
+                                    "vectorY": "L0",
+                                    "value": 100,
+                                    "minValue": "0",
+                                    "maxValue": "32767",
+                                    "clamp": false
+                                },
+                                "id": "0852ca37-0b19-4b4d-af8c-44754ca0a930"
+                            },
+                            {
+                                "command": "EVENT_VARIABLE_MATH",
+                                "args": {
+                                    "vectorX": "2",
+                                    "operation": "add",
+                                    "other": "val",
+                                    "vectorY": "L0",
+                                    "value": 800,
+                                    "minValue": "0",
+                                    "maxValue": "32767",
+                                    "clamp": false
+                                },
+                                "id": "07343e7c-28fd-4efa-9649-2f62c652f363"
+                            }
+                        ]
+                    },
+                    "id": "b2e1e00a-1817-4749-afde-4f2725419f67"
+                },
+                {
                     "command": "EVENT_GROUP",
                     "args": {
                         "__collapse": false,
@@ -327,7 +385,7 @@
                                 "args": {
                                     "text": [
                                         " Remember my \n darling.",
-                                        " Don't spend \n more than\n $1000!!!"
+                                        " Don't spend \n more than\n $$02$!!!"
                                     ],
                                     "avatarId": "6db249b3-b56e-4ae4-839f-884bc32722c9"
                                 },
@@ -346,11 +404,6 @@
                         "__comment": true
                     },
                     "id": "9b878549-1e83-43d7-9887-393dd3633c17"
-                },
-                {
-                    "command": "EVENT_RNG_SEED",
-                    "args": {},
-                    "id": "e6b70566-70a0-478d-acd2-81b24fb7f8b6"
                 },
                 {
                     "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -3696,7 +3749,8 @@
                                         "type": "number",
                                         "value": 1000
                                     },
-                                    "__collapse": true
+                                    "__collapse": true,
+                                    "__comment": true
                                 },
                                 "id": "7a097f70-0345-445b-b603-27d9c34c9bc5"
                             },
@@ -4365,7 +4419,7 @@
             "symbol": "sound_pause_wav",
             "filename": "Pause.wav",
             "type": "wav",
-            "inode": "3940649674132943",
+            "inode": "1125899907455199",
             "_v": 1717978650686
         },
         {
@@ -4374,7 +4428,7 @@
             "symbol": "sound_beep_wav",
             "filename": "beep.wav",
             "type": "wav",
-            "inode": "2533274790579645",
+            "inode": "1125899907455200",
             "_v": 1717979099088
         },
         {
@@ -4383,7 +4437,7 @@
             "symbol": "sound_beep2_wav",
             "filename": "beep2.wav",
             "type": "wav",
-            "inode": "4503599627554252",
+            "inode": "1125899907455202",
             "_v": 1717979588435
         },
         {
@@ -4392,7 +4446,7 @@
             "symbol": "sound_kaching_wav",
             "filename": "kaching.wav",
             "type": "wav",
-            "inode": "3096224744000973",
+            "inode": "844424930750923",
             "_v": 1717900280024
         },
         {
@@ -4401,7 +4455,7 @@
             "symbol": "sound_shopping_wav",
             "filename": "shopping.wav",
             "type": "wav",
-            "inode": "6755399441239526",
+            "inode": "844424930750924",
             "_v": 1717903415804
         },
         {
@@ -4410,7 +4464,7 @@
             "symbol": "sound_untitled_wav",
             "filename": "untitled.wav",
             "type": "wav",
-            "inode": "4503599627554279",
+            "inode": "1125899907455203",
             "_v": 1717979237738
         }
     ],
@@ -4571,16 +4625,6 @@
             "symbol": "var_item_rand"
         },
         {
-            "id": "752a3247-c421-4376-a433-743e375b1a34__L0",
-            "name": "Local 0",
-            "symbol": "var_local_0"
-        },
-        {
-            "id": "c6afabed-3009-43b2-8705-b1802cf63d11__L0",
-            "name": "tax",
-            "symbol": "var_tax_1"
-        },
-        {
             "id": "11",
             "name": "grade",
             "symbol": "var_grade"
@@ -4614,6 +4658,16 @@
             "id": "17",
             "name": "grade_f",
             "symbol": "var_grade_f"
+        },
+        {
+            "id": "752a3247-c421-4376-a433-743e375b1a34__L0",
+            "name": "Local 0",
+            "symbol": "var_local_0"
+        },
+        {
+            "id": "c6afabed-3009-43b2-8705-b1802cf63d11__L0",
+            "name": "tax",
+            "symbol": "var_tax_1"
         }
     ],
     "engineFieldValues": [
@@ -4623,9 +4677,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "63468c6e-dd74-47f9-82fb-43f9fd0a121f",
-        "startX": 12,
-        "startY": 7,
+        "startSceneId": "291f73ff-eca5-4dc2-a966-9627ff0ecc8b",
+        "startX": 6,
+        "startY": 6,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
@@ -4633,8 +4687,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 67,
-        "worldScrollY": 0,
+        "worldScrollX": 53,
+        "worldScrollY": 3,
         "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
