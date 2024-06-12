@@ -811,14 +811,734 @@
                     "id": "eacd984d-f02b-4bab-bf97-7995adcddec8"
                 },
                 {
+                    "command": "EVENT_GROUP",
+                    "args": {
+                        "__label": "grading",
+                        "__collapse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_GROUP",
+                                "args": {
+                                    "__label": "setup grades",
+                                    "__collapse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "grade_s",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "12",
+                                                            "operation": "set",
+                                                            "other": "val",
+                                                            "vectorY": "2",
+                                                            "value": 19,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "bd2d868c-2784-4041-84d1-860cefd6454c"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "12",
+                                                            "operation": "mul",
+                                                            "other": "var",
+                                                            "vectorY": "2",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "ba29d24a-27ef-4d0a-84d4-ba8253a11818"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "12",
+                                                            "operation": "div",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "57149ff8-6307-44f5-9836-4ef52c35df6b"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "9a7bd5d9-60c0-445e-9609-8c7169c829ec"
+                                        },
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "grade_a",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "13",
+                                                            "operation": "set",
+                                                            "other": "val",
+                                                            "vectorY": "2",
+                                                            "value": 14,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "2f26f209-3caa-40b6-8732-6b3552022099"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "13",
+                                                            "operation": "mul",
+                                                            "other": "var",
+                                                            "vectorY": "2",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true
+                                                        },
+                                                        "id": "009e92ab-747e-43b5-a5a3-0e95f5ff56e8"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "13",
+                                                            "operation": "div",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 15,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "b06d710a-4c57-402a-8dca-75e41f37e0f0"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "d32a98f0-ac47-441f-a59d-5ef4b5c3014b"
+                                        },
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "grade_b",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "14",
+                                                            "operation": "set",
+                                                            "other": "val",
+                                                            "vectorY": "2",
+                                                            "value": 9,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "c9fe9af0-72dc-457c-a054-18d1ac6e376a"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "14",
+                                                            "operation": "mul",
+                                                            "other": "var",
+                                                            "vectorY": "2",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "9f4e0e68-a349-42e0-89a0-62ebd611bc98"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "14",
+                                                            "operation": "div",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 10,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "4e99bd00-0fe4-434e-86fb-6d59adca6254"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "9a1d32c6-b2d4-4869-b042-1e462d8a8198"
+                                        },
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "grade_c",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "15",
+                                                            "operation": "set",
+                                                            "other": "val",
+                                                            "vectorY": "2",
+                                                            "value": 4,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "90fa7376-946d-49c9-bace-8ae649f1247a"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "15",
+                                                            "operation": "mul",
+                                                            "other": "var",
+                                                            "vectorY": "2",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "59b53dc8-9b60-4693-a40e-9ed53e35b217"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "15",
+                                                            "operation": "div",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 5,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "65462ac8-44f3-42b3-8f04-87f42586c326"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "6bb88562-bb01-48ad-9ccf-743af8aef876"
+                                        },
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "grade_d",
+                                                "__collapse": true
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "16",
+                                                            "operation": "set",
+                                                            "other": "val",
+                                                            "vectorY": "2",
+                                                            "value": 2,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "7fb3c537-9f57-425b-b7ce-ba6dd66020ec"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "16",
+                                                            "operation": "mul",
+                                                            "other": "var",
+                                                            "vectorY": "2",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "f4315d5f-d2c9-4bc2-9438-ef19209fd8c6"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "16",
+                                                            "operation": "div",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 3,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "c34372db-3ee1-4273-b62a-3606520d5344"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "dbec1adb-8179-4657-9562-f3e53eda6a1d"
+                                        },
+                                        {
+                                            "command": "EVENT_GROUP",
+                                            "args": {
+                                                "__label": "grade_f",
+                                                "__collapse": true,
+                                                "__comment": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "17",
+                                                            "operation": "set",
+                                                            "other": "val",
+                                                            "vectorY": "2",
+                                                            "value": 0,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": false
+                                                        },
+                                                        "id": "ad81571b-8291-4207-a916-b91bc72afe02"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "12",
+                                                            "operation": "mul",
+                                                            "other": "var",
+                                                            "vectorY": "2",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true,
+                                                            "__comment": true
+                                                        },
+                                                        "id": "b717175c-4e8d-4663-a872-08d93bcb49ff"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_VARIABLE_MATH",
+                                                        "args": {
+                                                            "vectorX": "12",
+                                                            "operation": "div",
+                                                            "other": "val",
+                                                            "vectorY": "L0",
+                                                            "value": 20,
+                                                            "minValue": "0",
+                                                            "maxValue": "32767",
+                                                            "clamp": false,
+                                                            "__collapse": true,
+                                                            "__comment": true
+                                                        },
+                                                        "id": "31d30755-c5ec-43c2-8ce1-13e8a4cc0aca"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "cddc7467-2eea-4920-ae72-73b21abd8085"
+                                        }
+                                    ]
+                                },
+                                "id": "fcd476fe-8bab-498f-a712-1fbc729ea11e"
+                            },
+                            {
+                                "command": "EVENT_IF_FALSE",
+                                "args": {
+                                    "variable": "5",
+                                    "__collapseElse": false,
+                                    "__collapse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "11",
+                                                "value": {
+                                                    "type": "number",
+                                                    "value": 5
+                                                }
+                                            },
+                                            "id": "da10a88e-dbf0-45ee-a2ed-71631008c0e8"
+                                        },
+                                        {
+                                            "command": "EVENT_GBVM_SCRIPT",
+                                            "args": {
+                                                "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\003\\003F\"\nVM_DISPLAY_TEXT",
+                                                "references": [],
+                                                "__comment": true
+                                            },
+                                            "id": "57c3174d-7da8-4ff2-a0d3-a3f578212945"
+                                        }
+                                    ],
+                                    "false": [
+                                        {
+                                            "command": "EVENT_IF_VALUE_COMPARE",
+                                            "args": {
+                                                "vectorX": "6",
+                                                "operator": ">=",
+                                                "vectorY": "12",
+                                                "__collapseElse": false,
+                                                "__collapse": false
+                                            },
+                                            "children": {
+                                                "true": [
+                                                    {
+                                                        "command": "EVENT_SET_VALUE",
+                                                        "args": {
+                                                            "variable": "11",
+                                                            "value": {
+                                                                "type": "number",
+                                                                "value": 0
+                                                            }
+                                                        },
+                                                        "id": "301e8cb4-81be-48bf-bcd1-4bdc8741afd1"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                        "args": {
+                                                            "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\003\\003S\"\nVM_DISPLAY_TEXT",
+                                                            "references": [],
+                                                            "__comment": true
+                                                        },
+                                                        "id": "e2480e4f-961a-41cc-86f5-4f84b58bd53d"
+                                                    }
+                                                ],
+                                                "false": [
+                                                    {
+                                                        "command": "EVENT_IF_VALUE_COMPARE",
+                                                        "args": {
+                                                            "vectorX": "6",
+                                                            "operator": ">=",
+                                                            "vectorY": "13",
+                                                            "__collapseElse": false
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "11",
+                                                                        "value": {
+                                                                            "type": "number",
+                                                                            "value": 1
+                                                                        }
+                                                                    },
+                                                                    "id": "9e9a0293-5f7f-4684-9b2e-d5a2f0314212"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                                    "args": {
+                                                                        "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\003\\003A\"\nVM_DISPLAY_TEXT",
+                                                                        "references": [],
+                                                                        "__comment": true
+                                                                    },
+                                                                    "id": "5d0cb7e7-cfe0-481f-91bf-8ce98fd490d1"
+                                                                }
+                                                            ],
+                                                            "false": [
+                                                                {
+                                                                    "command": "EVENT_IF_VALUE_COMPARE",
+                                                                    "args": {
+                                                                        "vectorX": "6",
+                                                                        "operator": ">=",
+                                                                        "vectorY": "14",
+                                                                        "__collapseElse": false
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "command": "EVENT_SET_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "11",
+                                                                                    "value": {
+                                                                                        "type": "number",
+                                                                                        "value": 2
+                                                                                    }
+                                                                                },
+                                                                                "id": "ff01e752-bc5f-48e3-b1e9-f6a7f9bbcc71"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_GBVM_SCRIPT",
+                                                                                "args": {
+                                                                                    "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\002\\002B\"\nVM_DISPLAY_TEXT",
+                                                                                    "references": [],
+                                                                                    "__comment": true
+                                                                                },
+                                                                                "id": "8bd79994-06b4-4dbc-a486-cf9f9259dd78"
+                                                                            }
+                                                                        ],
+                                                                        "false": [
+                                                                            {
+                                                                                "command": "EVENT_IF_VALUE_COMPARE",
+                                                                                "args": {
+                                                                                    "vectorX": "6",
+                                                                                    "operator": ">=",
+                                                                                    "vectorY": "15",
+                                                                                    "__collapseElse": false
+                                                                                },
+                                                                                "children": {
+                                                                                    "true": [
+                                                                                        {
+                                                                                            "command": "EVENT_SET_VALUE",
+                                                                                            "args": {
+                                                                                                "variable": "11",
+                                                                                                "value": {
+                                                                                                    "type": "number",
+                                                                                                    "value": 3
+                                                                                                }
+                                                                                            },
+                                                                                            "id": "544f9277-7041-4fca-addf-53cf96731098"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_GBVM_SCRIPT",
+                                                                                            "args": {
+                                                                                                "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\002\\002C\"\nVM_DISPLAY_TEXT",
+                                                                                                "references": [],
+                                                                                                "__comment": true
+                                                                                            },
+                                                                                            "id": "90b9faf1-a3d2-4cf4-b9e0-7efc9656fc72"
+                                                                                        }
+                                                                                    ],
+                                                                                    "false": [
+                                                                                        {
+                                                                                            "command": "EVENT_IF_VALUE_COMPARE",
+                                                                                            "args": {
+                                                                                                "vectorX": "6",
+                                                                                                "operator": ">=",
+                                                                                                "vectorY": "16",
+                                                                                                "__collapseElse": false
+                                                                                            },
+                                                                                            "children": {
+                                                                                                "true": [
+                                                                                                    {
+                                                                                                        "command": "EVENT_SET_VALUE",
+                                                                                                        "args": {
+                                                                                                            "variable": "11",
+                                                                                                            "value": {
+                                                                                                                "type": "number",
+                                                                                                                "value": 4
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "id": "aca390d2-48ba-424d-bcfb-66d089bb10d1"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                                                                        "args": {
+                                                                                                            "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\002\\002D\"\nVM_DISPLAY_TEXT",
+                                                                                                            "references": [],
+                                                                                                            "__comment": true
+                                                                                                        },
+                                                                                                        "id": "08a3a127-ef37-405e-b607-a943f1101a6a"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "false": [
+                                                                                                    {
+                                                                                                        "command": "EVENT_IF_VALUE_COMPARE",
+                                                                                                        "args": {
+                                                                                                            "vectorX": "6",
+                                                                                                            "operator": ">=",
+                                                                                                            "vectorY": "17",
+                                                                                                            "__collapseElse": false,
+                                                                                                            "__comment": true
+                                                                                                        },
+                                                                                                        "children": {
+                                                                                                            "true": [
+                                                                                                                {
+                                                                                                                    "command": "EVENT_SET_VALUE",
+                                                                                                                    "args": {
+                                                                                                                        "variable": "11",
+                                                                                                                        "value": {
+                                                                                                                            "type": "number",
+                                                                                                                            "value": 5
+                                                                                                                        }
+                                                                                                                    },
+                                                                                                                    "id": "6c47e11e-be75-40ef-ad93-bcbb33e69859"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                                                                                    "args": {
+                                                                                                                        "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\002\\002F\"\nVM_DISPLAY_TEXT",
+                                                                                                                        "references": []
+                                                                                                                    },
+                                                                                                                    "id": "ecbcbbde-fe00-49db-a302-3152bf27f2fc"
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "false": [
+                                                                                                                {
+                                                                                                                    "command": "EVENT_GBVM_SCRIPT",
+                                                                                                                    "args": {
+                                                                                                                        "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\002\\002F\"\nVM_DISPLAY_TEXT",
+                                                                                                                        "references": []
+                                                                                                                    },
+                                                                                                                    "id": "95163b97-5c1a-4751-850b-b16208e936ea"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        "id": "29db5356-3f86-469d-8b95-78c567550910"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "command": "EVENT_SET_VALUE",
+                                                                                                        "args": {
+                                                                                                            "variable": "11",
+                                                                                                            "value": {
+                                                                                                                "type": "number",
+                                                                                                                "value": 5
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "id": "b3d3e086-d13f-495b-a887-61cfc6447e09"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "command": "EVENT_GBVM_SCRIPT",
+                                                                                                        "args": {
+                                                                                                            "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 0\n.asciz \"\\003\\002\\002F\"\nVM_DISPLAY_TEXT",
+                                                                                                            "references": [],
+                                                                                                            "__comment": true
+                                                                                                        },
+                                                                                                        "id": "ab22cd83-69c5-4dbc-a66b-f5f356d18fdd"
+                                                                                                    }
+                                                                                                ]
+                                                                                            },
+                                                                                            "id": "ac1eb16d-9173-45b6-8589-b87739deb095"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                "id": "33c7aa12-bafd-424f-a835-ab87bcfdb039"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "id": "b2f503e2-3f21-48d8-887c-0461192b4fff"
+                                                                }
+                                                            ]
+                                                        },
+                                                        "id": "f570d639-4484-4f84-a5ed-2ab9d086954b"
+                                                    }
+                                                ]
+                                            },
+                                            "id": "c37f2bba-ff35-48c2-8b2a-ba2ee1dde3a7"
+                                        }
+                                    ]
+                                },
+                                "id": "4940be42-483b-4c87-ae2e-f27c7f462c7e"
+                            },
+                            {
+                                "command": "EVENT_GBVM_SCRIPT",
+                                "args": {
+                                    "script": "VM_SWITCH_TEXT_LAYER .TEXT_LAYER_BKG\nVM_LOAD_TEXT 1\n.dw VAR_GRADE\n.asciz \"\\003\\001\\001%D\"\nVM_DISPLAY_TEXT",
+                                    "references": [
+                                        {
+                                            "type": "variable",
+                                            "id": "11"
+                                        }
+                                    ],
+                                    "__comment": true
+                                },
+                                "id": "09aecd88-1e67-4c4f-8a88-278aeabed2bf"
+                            },
+                            {
+                                "command": "EVENT_SWITCH",
+                                "args": {
+                                    "variable": "11",
+                                    "choices": 5,
+                                    "__collapseCase0": false,
+                                    "value0": 0,
+                                    "__collapseCase1": false,
+                                    "value1": 1,
+                                    "__collapseCase2": false,
+                                    "value2": 2,
+                                    "__collapseCase3": false,
+                                    "value3": 3,
+                                    "__collapseCase4": false,
+                                    "value4": 4,
+                                    "__collapseCase5": false,
+                                    "value5": 6,
+                                    "__collapseCase6": false,
+                                    "value6": 7,
+                                    "__collapseCase7": false,
+                                    "value7": 8,
+                                    "__collapseCase8": false,
+                                    "value8": 9,
+                                    "__collapseCase9": false,
+                                    "value9": 10,
+                                    "__collapseCase10": false,
+                                    "value10": 11,
+                                    "__collapseCase11": false,
+                                    "value11": 12,
+                                    "__collapseCase12": false,
+                                    "value12": 13,
+                                    "__collapseCase13": false,
+                                    "value13": 14,
+                                    "__collapseCase14": false,
+                                    "value14": 15,
+                                    "__collapseCase15": false,
+                                    "value15": 16,
+                                    "__collapseElse": false,
+                                    "__comment": true
+                                },
+                                "children": {
+                                    "true0": [],
+                                    "true1": [],
+                                    "true2": [],
+                                    "true3": [],
+                                    "true4": [],
+                                    "true5": [],
+                                    "true6": [],
+                                    "true7": [],
+                                    "true8": [],
+                                    "true9": [],
+                                    "true10": [],
+                                    "true11": [],
+                                    "true12": [],
+                                    "true13": [],
+                                    "true14": [],
+                                    "true15": [],
+                                    "false": []
+                                },
+                                "id": "6cfe8665-f69d-4644-b733-11e42157ea65"
+                            }
+                        ]
+                    },
+                    "id": "8b91d1e6-fb1d-42d7-aa38-d2b457f04dc1"
+                },
+                {
                     "command": "EVENT_GBVM_SCRIPT",
                     "args": {
-                        "script": "VM_OVERLAY_SHOW 7, 5, .UI_COLOR_WHITE, 0\n\nVM_SWITCH_TEXT_LAYER .TEXT_LAYER_WIN\nVM_LOAD_TEXT 3\n.dw VAR_TOTAL\n.dw VAR_LOCAL_TAX\n.dw VAR_FINAL\n.asciz\"\\003\\001\\001\\n\\n      $%D4\\n\\n\\n\\n(13%) $%D4\\n\\n\\n      $%D4\"\nVM_DISPLAY_TEXT",
+                        "script": "VM_OVERLAY_SHOW 7, 5, .UI_COLOR_WHITE, 0\nVM_OVERLAY_SET_SUBMAP 0, 0, 14, 14, 7, 5\n\nVM_SWITCH_TEXT_LAYER .TEXT_LAYER_WIN\nVM_LOAD_TEXT 3\n.dw VAR_TOTAL\n.dw VAR_LOCAL_TAX\n.dw VAR_FINAL\n.asciz\"\\003\\001\\001\\n\\n      $%D4\\n\\n\\n\\n(13%) $%D4\\n\\n\\n\\n      $%D4\"\nVM_DISPLAY_TEXT",
                         "references": [
-                            {
-                                "type": "variable",
-                                "id": "2"
-                            },
                             {
                                 "type": "variable",
                                 "id": "1"
@@ -830,10 +1550,6 @@
                             {
                                 "type": "variable",
                                 "id": "6"
-                            },
-                            {
-                                "type": "variable",
-                                "id": "8"
                             }
                         ],
                         "__comment": false,
@@ -1273,7 +1989,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "gamecomplete2.1.png"
+            "filename": "gamecomplete2.1.png",
+            "tileColors": []
         },
         {
             "id": "5778583a-e704-4b47-b286-7f2c01524f9a",
@@ -3862,6 +4579,41 @@
             "id": "c6afabed-3009-43b2-8705-b1802cf63d11__L0",
             "name": "tax",
             "symbol": "var_tax_1"
+        },
+        {
+            "id": "11",
+            "name": "grade",
+            "symbol": "var_grade"
+        },
+        {
+            "id": "12",
+            "name": "grade_s",
+            "symbol": "var_grade_s"
+        },
+        {
+            "id": "13",
+            "name": "grade_a",
+            "symbol": "var_grade_a"
+        },
+        {
+            "id": "14",
+            "name": "grade_b",
+            "symbol": "var_grade_b"
+        },
+        {
+            "id": "15",
+            "name": "grade_c",
+            "symbol": "var_grade_c"
+        },
+        {
+            "id": "16",
+            "name": "grade_d",
+            "symbol": "var_grade_d"
+        },
+        {
+            "id": "17",
+            "name": "grade_f",
+            "symbol": "var_grade_f"
         }
     ],
     "engineFieldValues": [
@@ -3872,8 +4624,8 @@
     ],
     "settings": {
         "startSceneId": "63468c6e-dd74-47f9-82fb-43f9fd0a121f",
-        "startX": 9,
-        "startY": 8,
+        "startX": 12,
+        "startY": 7,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
@@ -3881,9 +4633,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 184,
-        "worldScrollY": 47,
-        "zoom": 200,
+        "worldScrollX": 67,
+        "worldScrollY": 0,
+        "zoom": 100,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
